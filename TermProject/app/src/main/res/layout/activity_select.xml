@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectActivity">
+
+    <TextView
+        android:id="@+id/helloTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello~ OOO"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/chooseTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/chooseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="Which Language?"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/koreanButton"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:drawableLeft="@drawable/korea_img"
+        android:text="Korean"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/japaneseButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseTextView"
+        app:layout_constraintVertical_bias="0.447" />
+
+    <Button
+        android:id="@+id/frenchButton"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:drawableLeft="@drawable/french_img"
+        android:text="French"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/japaneseButton"
+        app:layout_constraintVertical_bias="0.262" />
+
+    <Button
+        android:id="@+id/japaneseButton"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:drawableLeft="@drawable/japan_img"
+        android:text="Japanese"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseTextView"
+        app:layout_constraintVertical_bias="0.372" />
+
+    <Button
+        android:id="@+id/germanButton"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:drawableLeft="@drawable/germany_img"
+        android:text="German"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frenchButton"
+        app:layout_constraintVertical_bias="0.455" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+{
+    "dev": {
+        "app_function": "TermP_2020315666.app",
+        "aws_region": "ap-northeast-2",
+        "profile_name": "default",
+        "project_name": "moapp-termproje",
+        "runtime": "python3.9",
+        "s3_bucket": "zappa-ea1fqw9ae"
+    }
+}
